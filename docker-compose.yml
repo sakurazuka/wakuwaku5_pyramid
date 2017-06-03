@@ -4,10 +4,12 @@ services:
     # image: postgres
   wakuwaku5_pyramid_web:
     build: .
-    command: python hello.py
+    # command: python hello.py
+    command: pserve book/development.ini --reload
     volumes:
       - .:/code
     ports:
-      - "8000:8000"
+      # - "8000:8000"
+      - "6543:6543"
     # depends_on:
       # - db

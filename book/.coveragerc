@@ -1,0 +1,3 @@
+[run]
+source = book
+omit = book/test*
