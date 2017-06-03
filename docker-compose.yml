@@ -1,0 +1,13 @@
+version: '2'
+services:
+  # db:
+    # image: postgres
+  wakuwaku5_pyramid_web:
+    build: .
+    command: python hello.py
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    # depends_on:
+      # - db
